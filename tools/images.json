@@ -1,0 +1,170 @@
+{
+ "hero": {
+  "src": "Fotos/Fotos 2025/IMG_3744.JPG",
+  "id": "1x76iFXVzbmKWhUyK0-EVJgiX6Ib2BRbj",
+  "crop": [
+   0,
+   0.04,
+   1,
+   0.92
+  ],
+  "widths": [
+   720,
+   1080,
+   1600,
+   2200
+  ]
+ },
+ "intro-wide": {
+  "src": "Captações/10 Outubro/Euro Padel Cup/Feminino/Fotos/DSC08167.JPG",
+  "id": "1IPPwpjkXue_AmFIXwSsGnxqSgusHGpc8",
+  "crop": [
+   0,
+   0.16,
+   1,
+   0.91
+  ]
+ },
+ "intro-tall": {
+  "src": "Captações/10 Outubro/Euro Padel Cup/Feminino/Fotos/DSC08167.JPG",
+  "id": "1IPPwpjkXue_AmFIXwSsGnxqSgusHGpc8",
+  "crop": [
+   0.13,
+   0,
+   0.663,
+   1
+  ],
+  "widths": [
+   640,
+   1024
+  ]
+ },
+ "beach-tennis": {
+  "src": "Captações/Conteúdo/Fotos/Julho/IMG_3326.JPG",
+  "id": "1sgwQTEkKUggzyIiGGp2a4WVowV2WFbwP",
+  "crop": [
+   0.05,
+   0,
+   0.95,
+   1
+  ]
+ },
+ "beach-tennis-m": {
+  "src": "Captações/Conteúdo/Fotos/Julho/IMG_3326.JPG",
+  "id": "1sgwQTEkKUggzyIiGGp2a4WVowV2WFbwP",
+  "crop": [
+   0.34,
+   0,
+   0.875,
+   1
+  ],
+  "widths": [
+   640,
+   1024
+  ]
+ },
+ "padel": {
+  "src": "Captações/10 Outubro/Euro Padel Cup/Feminino/Fotos/DSC08102.JPG",
+  "id": "1IXhPnfVcBZxaNN61UTaOc-w9rJuoTxDE",
+  "crop": [
+   0,
+   0.06,
+   1,
+   0.866
+  ]
+ },
+ "futevolei": {
+  "src": "Fotos/Fotos 2025/IMG_3742.JPG",
+  "id": "1OvGu-XonE_9PkU9yfJVUNgogVUCz7cuu",
+  "crop": [
+   0,
+   0.01,
+   1,
+   0.86
+  ]
+ },
+ "courts-wide": {
+  "src": "Fotos/IMG_6489.HEIC",
+  "id": "1gTFqtl2zqshmYC5tOrjA2ODIPyOyOt4a",
+  "crop": [
+   0,
+   0.38,
+   1,
+   0.755
+  ]
+ },
+ "courts-tall": {
+  "src": "Fotos/IMG_6489.HEIC",
+  "id": "1gTFqtl2zqshmYC5tOrjA2ODIPyOyOt4a",
+  "crop": [
+   0,
+   0.12,
+   1,
+   0.87
+  ],
+  "widths": [
+   640,
+   1024
+  ]
+ },
+ "padel-hall": {
+  "src": "Captações/07 Julho/IMG_4124.JPG",
+  "id": "1AX1gMuDTNgiOiMntQh_b8RQKpuj99ieX",
+  "crop": [
+   0,
+   0.08,
+   1,
+   0.914
+  ]
+ },
+ "bar": {
+  "src": "Fotos/Fotos 2025/IMG_6117.jpg",
+  "id": "1Gt_C1NN_nuOOFn0h2AgmGpFxrRlqccn9",
+  "crop": [
+   0,
+   0.36,
+   1,
+   0.86
+  ]
+ },
+ "crowd": {
+  "src": "Captações/Conteúdo/Futevôlei/Torneio FEV 2026/Fotos/DSC00553.JPG",
+  "id": "16o7qUjEMU9ap4yE44Qlh76r7nUYcJrO5",
+  "crop": [
+   0,
+   0.03,
+   1,
+   0.92
+  ]
+ },
+ "group": {
+  "src": "Captações/10 Outubro/Euro Padel Cup/Feminino/Mobile/IMG_3127.HEIC",
+  "id": "1QD4yBoag7EIeFWKle8nRZ79qP4HUpsOZ",
+  "crop": [
+   0,
+   0.04,
+   1,
+   0.9
+  ]
+ },
+ "spritz": {
+  "src": "Captações/10 Outubro/Euro Padel Cup/Feminino/Fotos/DSC08091.JPG",
+  "id": "1UVABaAqtx6fDE-GLJlCU1vg-eU6ZplAj",
+  "crop": [
+   0,
+   0.05,
+   1,
+   0.94
+  ]
+ },
+ "entrance": {
+  "src": "Fotos/Fotos 2025/IMG_6115.jpg",
+  "id": "1RFh7-Z-CCqceo5PNLRezkiNxVf7l_lIu",
+  "crop": [
+   0,
+   0.06,
+   1,
+   0.727
+  ]
+ }
+}
