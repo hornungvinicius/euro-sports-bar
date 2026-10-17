@@ -16,23 +16,21 @@
   ]
  },
  "intro-wide": {
-  "src": "Captações/10 Outubro/Euro Padel Cup/Feminino/Fotos/DSC08167.JPG",
-  "id": "1IPPwpjkXue_AmFIXwSsGnxqSgusHGpc8",
+  "src": "Fotos/IMG_6490.HEIC",
   "crop": [
    0,
-   0.16,
+   0.33,
    1,
-   0.91
+   0.705
   ]
  },
  "intro-tall": {
-  "src": "Captações/10 Outubro/Euro Padel Cup/Feminino/Fotos/DSC08167.JPG",
-  "id": "1IPPwpjkXue_AmFIXwSsGnxqSgusHGpc8",
+  "src": "Fotos/IMG_6490.HEIC",
   "crop": [
-   0.13,
    0,
-   0.663,
-   1
+   0.04,
+   1,
+   0.9775
   ],
   "widths": [
    640,
@@ -40,37 +38,31 @@
   ]
  },
  "beach-tennis": {
-  "src": "Captações/Conteúdo/Fotos/Julho/IMG_3326.JPG",
-  "id": "1sgwQTEkKUggzyIiGGp2a4WVowV2WFbwP",
+  "src": "Captações/07 Julho/DSC06429.JPG",
   "crop": [
-   0.05,
    0,
-   0.95,
-   1
-  ]
- },
- "beach-tennis-m": {
-  "src": "Captações/Conteúdo/Fotos/Julho/IMG_3326.JPG",
-  "id": "1sgwQTEkKUggzyIiGGp2a4WVowV2WFbwP",
-  "crop": [
-   0.34,
-   0,
-   0.875,
-   1
+   0.1,
+   1,
+   0.933
   ],
   "widths": [
    640,
-   1024
+   1024,
+   1600
   ]
  },
  "padel": {
-  "src": "Captações/10 Outubro/Euro Padel Cup/Feminino/Fotos/DSC08102.JPG",
-  "id": "1IXhPnfVcBZxaNN61UTaOc-w9rJuoTxDE",
+  "src": "Captações/10 Outubro/Euro Padel Cup/Feminino/Fotos/DSC08040.JPG",
   "crop": [
    0,
    0.06,
    1,
-   0.866
+   0.893
+  ],
+  "widths": [
+   640,
+   1024,
+   1600
   ]
  },
  "futevolei": {
@@ -78,53 +70,14 @@
   "id": "1OvGu-XonE_9PkU9yfJVUNgogVUCz7cuu",
   "crop": [
    0,
-   0.01,
+   0.0,
    1,
-   0.86
-  ]
- },
- "courts-wide": {
-  "src": "Fotos/IMG_6489.HEIC",
-  "id": "1gTFqtl2zqshmYC5tOrjA2ODIPyOyOt4a",
-  "crop": [
-   0,
-   0.38,
-   1,
-   0.755
-  ]
- },
- "courts-tall": {
-  "src": "Fotos/IMG_6489.HEIC",
-  "id": "1gTFqtl2zqshmYC5tOrjA2ODIPyOyOt4a",
-  "crop": [
-   0,
-   0.12,
-   1,
-   0.87
+   0.703
   ],
   "widths": [
    640,
-   1024
-  ]
- },
- "padel-hall": {
-  "src": "Captações/07 Julho/IMG_4124.JPG",
-  "id": "1AX1gMuDTNgiOiMntQh_b8RQKpuj99ieX",
-  "crop": [
-   0,
-   0.08,
-   1,
-   0.914
-  ]
- },
- "bar": {
-  "src": "Fotos/Fotos 2025/IMG_6117.jpg",
-  "id": "1Gt_C1NN_nuOOFn0h2AgmGpFxrRlqccn9",
-  "crop": [
-   0,
-   0.36,
-   1,
-   0.86
+   1024,
+   1600
   ]
  },
  "crowd": {
@@ -165,6 +118,100 @@
    0.06,
    1,
    0.727
+  ]
+ },
+ "est-padel": {
+  "src": "Captações/07 Julho/IMG_4129.JPG",
+  "widths": [
+   640,
+   1024
+  ]
+ },
+ "est-areia": {
+  "src": "Fotos/IMG_6495.HEIC",
+  "widths": [
+   640,
+   1024
+  ]
+ },
+ "est-bar": {
+  "src": "Fotos/Fotos 2025/IMG_6118.jpg",
+  "widths": [
+   640,
+   1024
+  ],
+  "crop": [
+   0,
+   0.06,
+   1,
+   0.949
+  ]
+ },
+ "est-portico": {
+  "src": "Fotos/IMG_6486.HEIC",
+  "widths": [
+   640,
+   1024
+  ]
+ },
+ "est-quadras": {
+  "src": "Captações/07 Julho/DSC06420.JPG",
+  "crop": [
+   0,
+   0.06,
+   1,
+   0.949
+  ],
+  "widths": [
+   640,
+   1024
+  ]
+ },
+ "est-corredor": {
+  "src": "Fixados/IMG_3950.JPG",
+  "widths": [
+   640,
+   1024
+  ]
+ },
+ "est-grelha": {
+  "src": "Captações/10 Outubro/Euro Padel Cup/Feminino/Fotos/DSC08115.JPG",
+  "widths": [
+   640,
+   1024
+  ],
+  "crop": [
+   0,
+   0.08,
+   1,
+   0.969
+  ]
+ },
+ "est-fachada": {
+  "src": "Fotos/IMG_6484.HEIC",
+  "widths": [
+   640,
+   1024
+  ]
+ },
+ "est-bola": {
+  "src": "Fotos/Fotos 2025/IMG_6126.jpg",
+  "widths": [
+   640,
+   1024
+  ],
+  "crop": [
+   0,
+   0.1,
+   1,
+   0.989
+  ]
+ },
+ "est-lounge": {
+  "src": "Captações/07 Julho/IMG_3988.JPG",
+  "widths": [
+   640,
+   1024
   ]
  }
 }

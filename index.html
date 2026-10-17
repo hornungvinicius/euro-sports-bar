@@ -9,7 +9,7 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Euro Sports &amp; Bar | Seu próximo esporte começa aqui">
   <meta property="og:description" content="Aulas de Beach Tennis, Padel e Futevôlei para quem quer começar, evoluir e aproveitar cada momento dentro de quadra.">
-  <meta property="og:image" content="assets/img/courts-wide-1600.webp">
+  <meta property="og:image" content="assets/img/intro-wide-1600.webp">
   <meta property="og:locale" content="pt_BR">
   <link rel="icon" href="assets/brand/favicon-32.png" sizes="32x32">
   <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
@@ -21,7 +21,7 @@
 </head>
 <!-- Official WhatsApp number goes in data-whatsapp: digits only, with country and area code (e.g. 5542XXXXXXXXX).
      While empty, every WhatsApp CTA falls back to the #contato section. -->
-<body data-whatsapp="">
+<body data-whatsapp="5542999264981">
   <a class="skip" href="#conteudo">Pular para o conteúdo</a>
 
   <header class="site-header">
@@ -105,7 +105,7 @@
             <img src="assets/img/intro-wide-1600.webp"
                  srcset="assets/img/intro-wide-640.webp 640w, assets/img/intro-wide-1024.webp 1024w, assets/img/intro-wide-1600.webp 1600w, assets/img/intro-wide-2200.webp 2200w"
                  sizes="(max-width: 1440px) 94vw, 1360px" width="1600" height="800" loading="lazy" decoding="async"
-                 alt="Quatro jogadoras sorrindo com suas raquetes na quadra azul de padel, com o público assistindo ao fundo">
+                 alt="Quadras de areia sob a grande cobertura metálica da Euro Sports, com jogo em andamento e o banner Areia nos pés, sorriso no rosto">
           </picture>
         </figure>
       </div>
@@ -122,32 +122,29 @@
           <p data-fade>Aulas para quem nunca entrou em quadra e para quem já joga e quer evoluir. Três esportes, com turmas para cada momento.</p>
         </header>
 
-        <article class="sport sport-lead" id="beach-tennis" aria-labelledby="bt-title">
-          <figure class="media" data-reveal>
-            <picture>
-              <source media="(max-width: 760px)" type="image/webp"
-                      srcset="assets/img/beach-tennis-m-640.webp 640w, assets/img/beach-tennis-m-1024.webp 1024w" sizes="100vw" width="1024" height="1275">
-              <img src="assets/img/beach-tennis-1600.webp"
-                   srcset="assets/img/beach-tennis-640.webp 640w, assets/img/beach-tennis-1024.webp 1024w, assets/img/beach-tennis-1600.webp 1600w, assets/img/beach-tennis-2200.webp 2200w"
-                   sizes="(max-width: 1100px) 60vw, 62vw" width="1600" height="1186" loading="lazy" decoding="async"
-                   alt="Professor cumprimenta uma aluna sorridente durante aula de Beach Tennis na areia">
-            </picture>
-          </figure>
-          <div class="sport-copy">
-            <h3 id="bt-title">Beach Tennis</h3>
-            <p>Aprenda a jogar, desenvolva técnica e pratique um esporte dinâmico, em um ambiente feito para conviver.</p>
-            <a class="link-arrow" href="#contato" data-wa="Beach Tennis">Consultar turmas de Beach Tennis
-              <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          </div>
-        </article>
+        <!-- one row per sport; even rows flip the photo to the right (styles.css) -->
+        <div class="sport-list">
+          <article class="sport" id="beach-tennis" aria-labelledby="bt-title">
+            <figure class="media" data-reveal>
+              <img src="assets/img/beach-tennis-1024.webp"
+                   srcset="assets/img/beach-tennis-640.webp 640w, assets/img/beach-tennis-1024.webp 1024w, assets/img/beach-tennis-1600.webp 1600w"
+                   sizes="(max-width: 760px) 100vw, 46vw" width="1600" height="2000" loading="lazy" decoding="async"
+                   alt="Aluna avança na areia para devolver a bola com a raquete, na quadra de Beach Tennis coberta">
+            </figure>
+            <div class="sport-copy">
+              <h3 id="bt-title">Beach Tennis</h3>
+              <p>Aprenda a jogar, desenvolva técnica e pratique um esporte dinâmico, em um ambiente feito para conviver.</p>
+              <a class="link-arrow" href="#contato" data-wa="Beach Tennis">Consultar turmas de Beach Tennis
+                <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </article>
 
-        <div class="sport-pair">
           <article class="sport" id="padel" aria-labelledby="padel-title">
             <figure class="media" data-reveal>
               <img src="assets/img/padel-1024.webp"
                    srcset="assets/img/padel-640.webp 640w, assets/img/padel-1024.webp 1024w, assets/img/padel-1600.webp 1600w"
-                   sizes="(max-width: 760px) 100vw, 46vw" width="1600" height="1934" loading="lazy" decoding="async"
-                   alt="Jogadora em posição de espera, raquete à frente, na quadra azul de padel">
+                   sizes="(max-width: 760px) 100vw, 46vw" width="1600" height="2000" loading="lazy" decoding="async"
+                   alt="Jogadora prepara a esquerda com a bola chegando, na quadra azul de padel">
             </figure>
             <div class="sport-copy">
               <h3 id="padel-title">Padel</h3>
@@ -161,7 +158,7 @@
             <figure class="media" data-reveal>
               <img src="assets/img/futevolei-1024.webp"
                    srcset="assets/img/futevolei-640.webp 640w, assets/img/futevolei-1024.webp 1024w, assets/img/futevolei-1600.webp 1600w"
-                   sizes="(max-width: 760px) 100vw, 40vw" width="1600" height="2418" loading="lazy" decoding="async"
+                   sizes="(max-width: 760px) 100vw, 46vw" width="1600" height="2000" loading="lazy" decoding="async"
                    alt="Atleta de futevôlei salta para alcançar a bola, com a areia subindo sob os pés">
             </figure>
             <div class="sport-copy">
@@ -204,46 +201,64 @@
           </h2>
           <p data-fade>Treine em quadras de areia cobertas e aproveite estacionamento gratuito, vestiários completos e um bar para o pós-jogo.</p>
         </header>
-        <figure class="facility-photo media" data-reveal data-parallax>
-          <picture>
-            <source media="(max-width: 760px)" type="image/webp"
-                    srcset="assets/img/courts-tall-640.webp 640w, assets/img/courts-tall-1024.webp 1024w" sizes="100vw" width="1024" height="1024">
-            <img src="assets/img/courts-wide-1600.webp"
-                 srcset="assets/img/courts-wide-640.webp 640w, assets/img/courts-wide-1024.webp 1024w, assets/img/courts-wide-1600.webp 1600w, assets/img/courts-wide-2200.webp 2200w"
-                 sizes="(max-width: 1440px) 94vw, 1360px" width="1600" height="800" loading="lazy" decoding="async"
-                 alt="Quadras de areia sob a grande cobertura metálica da Euro Sports, com jogo em andamento e o banner Areia nos pés, sorriso no rosto">
-          </picture>
-        </figure>
+      </div>
 
-        <div class="facility-grid">
-          <ul class="specs" aria-label="Estrutura">
-            <li><strong>4 quadras de areia</strong><span>Todas cobertas</span></li>
-            <li><strong>2 quadras de padel</strong><span>Em pavilhão coberto</span></li>
-            <li><strong>Estacionamento</strong><span>Próprio e gratuito</span></li>
-            <li><strong>Vestiários</strong><span>Completos</span></li>
-            <li><strong>Bar</strong><span>Mesas e cadeiras para o pós-jogo</span></li>
-          </ul>
-          <div class="facility-figures">
-            <figure class="fig">
-              <div class="media" data-reveal>
-                <img src="assets/img/padel-hall-1024.webp"
-                     srcset="assets/img/padel-hall-640.webp 640w, assets/img/padel-hall-1024.webp 1024w, assets/img/padel-hall-1600.webp 1600w"
-                     sizes="(max-width: 900px) 100vw, 40vw" width="1600" height="1001" loading="lazy" decoding="async"
-                     alt="Pavilhão coberto com as quadras de padel de piso azul e iluminação">
-              </div>
-              <figcaption>As quadras de padel.</figcaption>
-            </figure>
-            <figure class="fig">
-              <div class="media" data-reveal>
-                <img src="assets/img/bar-1024.webp"
-                     srcset="assets/img/bar-640.webp 640w, assets/img/bar-1024.webp 1024w, assets/img/bar-1600.webp 1600w"
-                     sizes="(max-width: 900px) 100vw, 40vw" width="1600" height="1200" loading="lazy" decoding="async"
-                     alt="Balcão do bar com geladeiras e as mesas e cadeiras do salão">
-              </div>
-              <figcaption>O bar, para quando o jogo acaba.</figcaption>
-            </figure>
-          </div>
+      <!-- photo strip of the venue: drifts sideways on its own (main.js duplicates the slides for the loop);
+           pauses on hover, focus or the button, and becomes a swipeable row with reduced motion -->
+      <div class="tour" aria-label="Fotos da estrutura" role="region">
+        <div class="tour-track">
+          <figure style="--ar: 3 / 4">
+            <div class="media"><img src="assets/img/est-padel-640.webp" srcset="assets/img/est-padel-640.webp 640w, assets/img/est-padel-1024.webp 1024w"
+                 sizes="(max-width: 760px) 70vw, 36vw" width="768" height="1024" loading="lazy" decoding="async" alt="Quadra de padel de piso azul sob a cobertura em arco do pavilhão"></div>
+          </figure>
+          <figure style="--ar: 3 / 4">
+            <div class="media"><img src="assets/img/est-areia-640.webp" srcset="assets/img/est-areia-640.webp 640w, assets/img/est-areia-1024.webp 1024w"
+                 sizes="(max-width: 760px) 70vw, 36vw" width="768" height="1024" loading="lazy" decoding="async" alt="Dupla jogando na quadra de areia coberta, com o banner Areia nos pés, sorriso no rosto ao fundo"></div>
+          </figure>
+          <figure style="--ar: 3 / 4">
+            <div class="media"><img src="assets/img/est-bar-640.webp" srcset="assets/img/est-bar-640.webp 640w, assets/img/est-bar-1024.webp 1024w"
+                 sizes="(max-width: 760px) 70vw, 36vw" width="768" height="1024" loading="lazy" decoding="async" alt="Salão do bar com balcão, geladeiras e mesas altas de madeira"></div>
+          </figure>
+          <figure style="--ar: 3 / 4">
+            <div class="media"><img src="assets/img/est-lounge-640.webp" srcset="assets/img/est-lounge-640.webp 640w, assets/img/est-lounge-1024.webp 1024w"
+                 sizes="(max-width: 760px) 70vw, 36vw" width="768" height="1024" loading="lazy" decoding="async" alt="Espaço de convivência com raquetes de padel e beach tennis expostas na parede"></div>
+          </figure>
+          <figure style="--ar: 3 / 4">
+            <div class="media"><img src="assets/img/est-portico-640.webp" srcset="assets/img/est-portico-640.webp 640w, assets/img/est-portico-1024.webp 1024w"
+                 sizes="(max-width: 760px) 70vw, 36vw" width="768" height="1024" loading="lazy" decoding="async" alt="Pórtico de entrada Euro Sports Bar com araucárias e céu azul"></div>
+          </figure>
+          <figure style="--ar: 3 / 4">
+            <div class="media"><img src="assets/img/est-quadras-640.webp" srcset="assets/img/est-quadras-640.webp 640w, assets/img/est-quadras-1024.webp 1024w"
+                 sizes="(max-width: 760px) 70vw, 36vw" width="768" height="1024" loading="lazy" decoding="async" alt="Jogador recolhe bolas junto à rede da quadra de padel, com o pôr do sol ao fundo"></div>
+          </figure>
+          <figure style="--ar: 3 / 4">
+            <div class="media"><img src="assets/img/est-corredor-640.webp" srcset="assets/img/est-corredor-640.webp 640w, assets/img/est-corredor-1024.webp 1024w"
+                 sizes="(max-width: 760px) 70vw, 36vw" width="768" height="1024" loading="lazy" decoding="async" alt="Corredor de grama sintética ao lado das quadras de padel cobertas"></div>
+          </figure>
+          <figure style="--ar: 3 / 4">
+            <div class="media"><img src="assets/img/est-grelha-640.webp" srcset="assets/img/est-grelha-640.webp 640w, assets/img/est-grelha-1024.webp 1024w"
+                 sizes="(max-width: 760px) 70vw, 36vw" width="768" height="1024" loading="lazy" decoding="async" alt="Espetinhos e hambúrgueres na grelha do bar"></div>
+          </figure>
+          <figure style="--ar: 3 / 4">
+            <div class="media"><img src="assets/img/est-fachada-640.webp" srcset="assets/img/est-fachada-640.webp 640w, assets/img/est-fachada-1024.webp 1024w"
+                 sizes="(max-width: 760px) 70vw, 36vw" width="768" height="1024" loading="lazy" decoding="async" alt="Cobertura das quadras de areia vista do estacionamento, com araucária ao lado"></div>
+          </figure>
+          <figure style="--ar: 3 / 4">
+            <div class="media"><img src="assets/img/est-bola-640.webp" srcset="assets/img/est-bola-640.webp 640w, assets/img/est-bola-1024.webp 1024w"
+                 sizes="(max-width: 760px) 70vw, 36vw" width="768" height="1024" loading="lazy" decoding="async" alt="Bola de futevôlei na areia da quadra"></div>
+          </figure>
         </div>
+        <button class="tour-toggle" type="button" aria-pressed="false">Pausar fotos</button>
+      </div>
+
+      <div class="wrap">
+        <ul class="specs" aria-label="Estrutura">
+          <li><strong>4 quadras de areia</strong><span>Todas cobertas</span></li>
+          <li><strong>2 quadras de padel</strong><span>Em pavilhão coberto</span></li>
+          <li><strong>Estacionamento</strong><span>Próprio e gratuito</span></li>
+          <li><strong>Vestiários</strong><span>Completos</span></li>
+          <li><strong>Bar</strong><span>Mesas e cadeiras para o pós-jogo</span></li>
+        </ul>
       </div>
     </section>
 
@@ -286,7 +301,34 @@
       </div>
     </section>
 
-    <!-- 7. Closing CTA -->
+    <!-- 7. Google reviews: real 5-star reviews from the Google Business listing (read 2026-10-16), quoted as written -->
+    <section class="reviews on-light" id="avaliacoes" aria-labelledby="avaliacoes-title">
+      <div class="wrap reviews-grid">
+        <div class="reviews-score">
+          <h2 id="avaliacoes-title">Quem joga, recomenda.</h2>
+          <p class="score"><span class="score-num">4,7</span><span class="stars" aria-hidden="true">★★★★★</span></p>
+          <p class="score-note">Nota média em 443 avaliações no Google, 342 delas com 5 estrelas.</p>
+          <a class="link-arrow" href="https://search.google.com/local/reviews?placeid=ChIJccURlOka6JQRpabOYSsbLXI" target="_blank" rel="noopener">Ver avaliações no Google
+            <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+        <ul class="quotes">
+          <li>
+            <blockquote>“Lugar sensacional para praticar esportes, comer e tirar um lazer, Ponta Grossa precisa de mais lugares como o euro”</blockquote>
+            <p class="quote-by"><span class="stars" role="img" aria-label="5 estrelas">★★★★★</span> NEGO, no Google</p>
+          </li>
+          <li>
+            <blockquote>“Local maravilhoso, onde o esporte e a amizade falam por si só, pensou em esportes, pensou euro!!”</blockquote>
+            <p class="quote-by"><span class="stars" role="img" aria-label="5 estrelas">★★★★★</span> Matheus Serrano, no Google</p>
+          </li>
+          <li>
+            <blockquote>“Possui bar, espaço de convivência com TV e canais esportivos a cabo. Estacionamento amplo e de fácil acesso. Preço justo pelo que oferece. Funcionários prestativos.”</blockquote>
+            <p class="quote-by"><span class="stars" role="img" aria-label="5 estrelas">★★★★★</span> Yuri Ranzani, Local Guide no Google</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 8. Closing CTA -->
     <section class="contact" id="contato" aria-labelledby="contato-title">
       <div class="wrap contact-grid">
         <div class="contact-main">

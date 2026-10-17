@@ -61,8 +61,28 @@
     new IntersectionObserver(([e]) => { atContact = e.isIntersecting; update(); }, { rootMargin: '0px 0px -20% 0px' }).observe(contact);
   }
 
-  /* ---------- motion ---------- */
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---------- venue photo strip: a copy of the slides makes the CSS loop seamless ---------- */
+  const tour = document.querySelector('.tour');
+  if (tour && !reduce) {
+    const track = tour.querySelector('.tour-track');
+    [...track.children].forEach((slide) => {
+      const copy = slide.cloneNode(true);
+      copy.setAttribute('aria-hidden', 'true');
+      track.append(copy);
+    });
+    tour.style.setProperty('--tour-time', `${track.children.length * 5}s`);
+    tour.classList.add('is-looping');
+    const btn = tour.querySelector('.tour-toggle');
+    btn.addEventListener('click', () => {
+      const paused = tour.classList.toggle('is-paused');
+      btn.setAttribute('aria-pressed', paused);
+      btn.textContent = paused ? 'Continuar fotos' : 'Pausar fotos';
+    });
+  }
+
+  /* ---------- motion ---------- */
   if (reduce || !window.gsap || !window.ScrollTrigger) return;
   gsap.registerPlugin(ScrollTrigger);
   root.classList.add('js');

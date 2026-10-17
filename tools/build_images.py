@@ -2,7 +2,7 @@
 
 Usage:  python tools/build_images.py [slug ...]
 Reads tools/images.json:
-  { "slug": {"src": "<path inside the Drive folder>", "id": "<Drive file id>",
+  { "slug": {"src": "<path inside the Drive folder>", "id": "<Drive file id>"?,
              "crop": [x0, y0, x1, y1]?, "widths": [..]?, "q": 76? } }
 crop is in 0-1 fractions of the upright image. Originals are fetched once by Drive id into
 the system temp dir (faster than the synced folder) and fall back to the local Drive path.
@@ -25,6 +25,8 @@ DEFAULT_WIDTHS = [640, 1024, 1600, 2200]
 
 
 def source(s):
+    if not s.get('id'):
+        return os.path.join(ROOT, s['src'])
     os.makedirs(CACHE, exist_ok=True)
     cached = os.path.join(CACHE, s['id'] + '.jpg')
     if not os.path.exists(cached):
