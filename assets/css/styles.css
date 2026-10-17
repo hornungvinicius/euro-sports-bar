@@ -215,23 +215,15 @@ p { text-wrap: pretty; }
 .tour figure { flex: none; height: clamp(260px, 34vw, 480px); aspect-ratio: var(--ar, 4 / 3); }
 .tour .media { height: 100%; }
 .tour figcaption { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
-.tour-toggle {
-  position: absolute; right: var(--pad); bottom: 14px; z-index: 1;
-  min-height: 40px; padding: 0 16px; border: 0; border-radius: 999px; cursor: pointer;
-  background: oklch(0.155 0.035 262 / 0.7); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
-  color: var(--on-dark); font: inherit; font-size: 0.875rem; font-weight: 600;
-}
 @media (prefers-reduced-motion: no-preference) {
   .tour.is-looping .tour-track { animation: tour var(--tour-time, 70s) linear infinite; }
-  .tour.is-looping:hover .tour-track, .tour.is-looping:focus-within .tour-track,
-  .tour.is-paused .tour-track { animation-play-state: paused; }
+  .tour.is-looping:hover .tour-track, .tour.is-looping:focus-within .tour-track { animation-play-state: paused; }
 }
 @keyframes tour { to { transform: translateX(-50%); } }
 /* without the loop (reduced motion or no JS) the strip is a swipeable row */
 .tour:not(.is-looping) { overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; }
 .tour:not(.is-looping)::-webkit-scrollbar { display: none; }
 .tour:not(.is-looping) figure { scroll-snap-align: start; }
-.tour:not(.is-looping) .tour-toggle { display: none; }
 
 .specs { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 24px; margin-top: clamp(48px, 6vw, 88px); border-top: 1px solid var(--line-dark); padding-top: 24px; }
 .specs li { display: grid; gap: 6px; align-content: start; }
@@ -358,6 +350,8 @@ address { font-style: normal; }
     color: var(--on-dark); border: 0; font: inherit; font-weight: 600; font-size: 0.9375rem; cursor: pointer;
   }
   .hero { padding: 8px; }
+  /* phones get no drift, so photos fill their frame at 100% instead of carrying parallax headroom */
+  .hero-media img, [data-parallax] img { top: 0; height: 100%; }
   .hero-copy { min-height: calc(100svh - 16px); padding: 104px 20px 24px; gap: 20px; }
   .hero-sports { display: none; }
   .band h2 { font-size: clamp(1.75rem, 8.4vw, 2.5rem); }

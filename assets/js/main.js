@@ -74,12 +74,6 @@
     });
     tour.style.setProperty('--tour-time', `${track.children.length * 5}s`);
     tour.classList.add('is-looping');
-    const btn = tour.querySelector('.tour-toggle');
-    btn.addEventListener('click', () => {
-      const paused = tour.classList.toggle('is-paused');
-      btn.setAttribute('aria-pressed', paused);
-      btn.textContent = paused ? 'Continuar fotos' : 'Pausar fotos';
-    });
   }
 
   /* ---------- motion ---------- */
@@ -99,10 +93,12 @@
     .from('.hero-aside > *', { y: 18, autoAlpha: 0, duration: 0.9, stagger: 0.1 }, 0.9)
     .from('.hero-sports a', { autoAlpha: 0, duration: 1, stagger: 0.08 }, 1.0);
 
-  // Hero photo drifts slower than the page as it leaves.
-  gsap.to(heroImg, {
-    yPercent: 4, ease: 'none',
-    scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true },
+  // Hero photo drifts slower than the page as it leaves (desktop only, like the other parallax).
+  mm.add('(min-width: 761px)', () => {
+    gsap.to(heroImg, {
+      yPercent: 4, ease: 'none',
+      scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true },
+    });
   });
 
   // Headings: lines rise out of their own mask as the section arrives.
