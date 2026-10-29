@@ -161,7 +161,7 @@ p { text-wrap: pretty; }
 .hero-media img { position: absolute; left: 0; top: -4%; width: 100%; height: 108%; object-fit: cover; object-position: 46% 30%; }
 .hero-media::after {
   content: ""; position: absolute; inset: 0;
-  background: linear-gradient(to bottom, oklch(0.155 0.035 262 / 0.5), transparent 24%);
+  background: linear-gradient(to bottom, oklch(0.155 0.035 262 / 0.3) 0.0%, oklch(0.155 0.035 262 / 0.54) 1.8%, oklch(0.155 0.035 262 / 0.52) 3.3%, oklch(0.155 0.035 262 / 0.49) 4.8%, oklch(0.155 0.035 262 / 0.25) 6.4%, oklch(0.155 0.035 262 / 0.41) 7.7%, oklch(0.155 0.035 262 / 0.36) 9.0%, oklch(0.155 0.035 262 / 0.3) 10.3%, oklch(0.155 0.035 262 / 0.25) 11.4%, oklch(0.155 0.035 262 / 0.19) 12.8%, oklch(0.155 0.035 262 / 0.14) 13.9%, oklch(0.155 0.035 262 / 0.1) 15.2%, oklch(0.155 0.035 262 / 0.06) 16.5%, oklch(0.155 0.035 262 / 0.03) 18.0%, oklch(0.155 0.035 262 / 0.01) 19.6%, oklch(0.155 0.035 262 / 0) 22.0%);
 }
 
 /* ---------- intro ---------- */
@@ -320,17 +320,12 @@ address { font-style: normal; }
 }
 
 @media (max-width: 900px) {
-  /* hero becomes one full-bleed portrait photo with the copy laid over the sand */
-  .hero-frame { display: block; }
-  .hero-media { position: absolute; inset: 0; z-index: -1; }
-  .hero-media img { object-position: 42% 34%; }
-  .hero-media::after {
-    background:
-      linear-gradient(to top, oklch(0.155 0.035 262 / 0.94) 0%, oklch(0.155 0.035 262 / 0.78) 34%, oklch(0.155 0.035 262 / 0.1) 62%, transparent 70%),
-      linear-gradient(to bottom, oklch(0.155 0.035 262 / 0.55), transparent 18%);
-  }
-  .hero-copy { min-height: calc(100svh - 20px); gap: 24px; }
-  .hero-aside p { color: var(--on-dark); }
+  /* hero stacks: photo on top, copy on solid navy below; no text over the action */
+  .hero-frame { display: flex; flex-direction: column; }
+  .hero-media { position: relative; order: -1; flex: 1 1 auto; min-height: 280px; }
+  .hero-media img { object-position: 46% 22%; }
+  .hero-media::after { background: linear-gradient(to top, oklch(0.155 0.035 262 / 1) 0.0%, oklch(0.155 0.035 262 / 0.987) 2.7%, oklch(0.155 0.035 262 / 0.951) 5.1%, oklch(0.155 0.035 262 / 0.896) 7.5%, oklch(0.155 0.035 262 / 0.825) 9.9%, oklch(0.155 0.035 262 / 0.741) 11.9%, oklch(0.155 0.035 262 / 0.648) 13.9%, oklch(0.155 0.035 262 / 0.55) 16.0%, oklch(0.155 0.035 262 / 0.45) 17.7%, oklch(0.155 0.035 262 / 0.352) 19.7%, oklch(0.155 0.035 262 / 0.259) 21.4%, oklch(0.155 0.035 262 / 0.175) 23.5%, oklch(0.155 0.035 262 / 0.104) 25.5%, oklch(0.155 0.035 262 / 0.049) 27.9%, oklch(0.155 0.035 262 / 0.013) 30.3%, oklch(0.155 0.035 262 / 0) 34.0%), linear-gradient(to bottom, oklch(0.155 0.035 262 / 0.5), oklch(0.155 0.035 262 / 0) 22%); }
+  .hero-copy { flex: none; padding-top: 0; margin-top: -40px; position: relative; gap: 24px; }
   .band-inner { grid-template-columns: 1fr; }
   .band .hero-ctas { flex-direction: row; flex-wrap: wrap; }
   .facility-head h2, .facility-head p { grid-column: 1 / -1; }
@@ -352,7 +347,7 @@ address { font-style: normal; }
   .hero { padding: 8px; }
   /* phones get no drift, so photos fill their frame at 100% instead of carrying parallax headroom */
   .hero-media img, [data-parallax] img { top: 0; height: 100%; }
-  .hero-copy { min-height: calc(100svh - 16px); padding: 104px 20px 24px; gap: 20px; }
+  .hero-copy { padding: 0 20px 24px; margin-top: -28px; gap: 20px; }
   .hero-sports { display: none; }
   .band h2 { font-size: clamp(1.75rem, 8.4vw, 2.5rem); }
   .contact-place { grid-template-columns: 92px minmax(0, 1fr); gap: 16px; align-items: center; }
@@ -395,11 +390,8 @@ address { font-style: normal; }
 }
 
 @media (max-width: 760px) and (max-height: 800px) {
-  .hero-frame { display: flex; flex-direction: column; }
-  .hero-media { position: relative; inset: auto; z-index: 0; order: -1; flex: 1 1 auto; min-height: 200px; }
-  .hero-media img { object-position: 50% 20%; }
-  .hero-media::after { background: linear-gradient(to bottom, oklch(0.155 0.035 262 / 0.6), transparent 40%), linear-gradient(to top, var(--night), transparent 22%); }
-  .hero-copy { min-height: 0; flex: none; padding: 8px 20px 22px; gap: 18px; }
+  .hero-media { min-height: 200px; }
+  .hero-copy { padding-bottom: 22px; margin-top: -20px; gap: 18px; }
   .hero h1 { font-size: clamp(2rem, 9.6vw, 2.5rem); }
   .hero-aside p { font-size: 1rem; }
 }
