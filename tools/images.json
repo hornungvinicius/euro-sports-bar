@@ -16,43 +16,47 @@
   ]
  },
  "intro-wide": {
-  "src": "Fotos/IMG_6490.HEIC",
+  "src": "site/FOTOS/1E.png",
   "crop": [
    0,
-   0.33,
+   0.25,
    1,
-   0.705
+   0.917
+  ],
+  "widths": [
+   640,
+   1024,
+   1448
   ]
  },
  "intro-tall": {
-  "src": "Fotos/IMG_6490.HEIC",
+  "src": "site/FOTOS/1E.png",
+  "crop": [
+   0.08,
+   0,
+   0.68,
+   1
+  ],
+  "widths": [
+   640,
+   869
+  ]
+ },
+ "beach-tennis": {
+  "src": "site/FOTOS/2E.png",
   "crop": [
    0,
-   0.04,
+   0.08,
    1,
-   0.9775
+   0.913
   ],
   "widths": [
    640,
    1024
   ]
  },
- "beach-tennis": {
-  "src": "Captações/07 Julho/DSC06429.JPG",
-  "crop": [
-   0,
-   0.1,
-   1,
-   0.933
-  ],
-  "widths": [
-   640,
-   1024,
-   1600
-  ]
- },
  "padel": {
-  "src": "Captações/10 Outubro/Euro Padel Cup/Feminino/Fotos/DSC08040.JPG",
+  "src": "site/FOTOS/DSC08077.JPG",
   "crop": [
    0,
    0.06,
@@ -66,13 +70,12 @@
   ]
  },
  "futevolei": {
-  "src": "Fotos/Fotos 2025/IMG_3742.JPG",
-  "id": "1OvGu-XonE_9PkU9yfJVUNgogVUCz7cuu",
+  "src": "site/FOTOS/IMG_1625.JPG",
   "crop": [
    0,
-   0.0,
+   0.03,
    1,
-   0.703
+   0.863
   ],
   "widths": [
    640,
@@ -81,137 +84,121 @@
   ]
  },
  "crowd": {
-  "src": "Captações/Conteúdo/Futevôlei/Torneio FEV 2026/Fotos/DSC00553.JPG",
-  "id": "16o7qUjEMU9ap4yE44Qlh76r7nUYcJrO5",
+  "src": "site/FOTOS/6abc72cb-8d91-49a2-87fc-389206a55598.JPG",
   "crop": [
    0,
-   0.03,
+   0.06,
    1,
-   0.92
+   0.948
+  ],
+  "widths": [
+   640,
+   1024
   ]
  },
  "group": {
-  "src": "Captações/10 Outubro/Euro Padel Cup/Feminino/Mobile/IMG_3127.HEIC",
-  "id": "1QD4yBoag7EIeFWKle8nRZ79qP4HUpsOZ",
+  "src": "site/FOTOS/5E.jpg",
   "crop": [
    0,
-   0.04,
+   0.07,
    1,
-   0.9
+   0.93
   ]
  },
  "spritz": {
-  "src": "Captações/10 Outubro/Euro Padel Cup/Feminino/Fotos/DSC08091.JPG",
-  "id": "1UVABaAqtx6fDE-GLJlCU1vg-eU6ZplAj",
+  "src": "site/FOTOS/4E.png",
   "crop": [
    0,
    0.05,
    1,
    0.94
+  ],
+  "widths": [
+   640,
+   1024
   ]
  },
  "entrance": {
-  "src": "Fotos/Fotos 2025/IMG_6115.jpg",
-  "id": "1RFh7-Z-CCqceo5PNLRezkiNxVf7l_lIu",
+  "src": "site/FOTOS/IMG_6485.HEIC",
   "crop": [
    0,
-   0.06,
+   0.12,
    1,
-   0.727
+   0.87
   ]
  },
  "est-padel": {
-  "src": "Captações/07 Julho/IMG_4129.JPG",
-  "widths": [
-   640,
-   1024
-  ]
- },
- "est-areia": {
-  "src": "Fotos/IMG_6495.HEIC",
-  "widths": [
-   640,
-   1024
-  ]
- },
- "est-bar": {
-  "src": "Fotos/Fotos 2025/IMG_6118.jpg",
-  "widths": [
-   640,
-   1024
-  ],
+  "src": "site/FOTOS/DSC06361.JPG",
   "crop": [
    0,
-   0.06,
+   0.08,
    1,
-   0.949
+   0.969
+  ],
+  "widths": [
+   640,
+   1024
   ]
  },
  "est-portico": {
-  "src": "Fotos/IMG_6486.HEIC",
-  "widths": [
-   640,
-   1024
-  ]
- },
- "est-quadras": {
-  "src": "Captações/07 Julho/DSC06420.JPG",
-  "crop": [
-   0,
-   0.06,
-   1,
-   0.949
-  ],
+  "src": "site/FOTOS/IMG_6485.HEIC",
   "widths": [
    640,
    1024
   ]
  },
  "est-corredor": {
-  "src": "Fixados/IMG_3950.JPG",
-  "widths": [
-   640,
-   1024
-  ]
- },
- "est-grelha": {
-  "src": "Captações/10 Outubro/Euro Padel Cup/Feminino/Fotos/DSC08115.JPG",
-  "widths": [
-   640,
-   1024
-  ],
-  "crop": [
-   0,
-   0.08,
-   1,
-   0.969
-  ]
- },
- "est-fachada": {
-  "src": "Fotos/IMG_6484.HEIC",
+  "src": "site/FOTOS/6E.jpg",
   "widths": [
    640,
    1024
   ]
  },
  "est-bola": {
-  "src": "Fotos/Fotos 2025/IMG_6126.jpg",
-  "widths": [
-   640,
-   1024
-  ],
+  "src": "site/FOTOS/DSC00823.JPG",
   "crop": [
    0,
-   0.1,
+   0.06,
    1,
-   0.989
-  ]
- },
- "est-lounge": {
-  "src": "Captações/07 Julho/IMG_3988.JPG",
+   0.949
+  ],
   "widths": [
    640,
    1024
+  ]
+ },
+ "est-por-do-sol": {
+  "src": "site/FOTOS/DSC06419.JPG",
+  "crop": [
+   0,
+   0,
+   1,
+   0.889
+  ],
+  "widths": [
+   640,
+   1024
+  ]
+ },
+ "est-futevolei": {
+  "src": "site/FOTOS/3e.png",
+  "crop": [
+   0,
+   0.05,
+   1,
+   0.941
+  ],
+  "widths": [
+   640,
+   1024
+  ]
+ },
+ "est-drone": {
+  "src": "site/FOTOS/DJI_0618.JPG",
+  "widths": [
+   640,
+   1024,
+   1600
   ]
  }
 }
