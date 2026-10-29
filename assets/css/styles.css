@@ -325,7 +325,7 @@ address { font-style: normal; }
   .hero-media { position: relative; order: -1; flex: 1 1 auto; min-height: 280px; }
   .hero-media img { object-position: 46% 22%; }
   .hero-media::after { background: linear-gradient(to top, oklch(0.155 0.035 262 / 1) 0.0%, oklch(0.155 0.035 262 / 0.987) 2.7%, oklch(0.155 0.035 262 / 0.951) 5.1%, oklch(0.155 0.035 262 / 0.896) 7.5%, oklch(0.155 0.035 262 / 0.825) 9.9%, oklch(0.155 0.035 262 / 0.741) 11.9%, oklch(0.155 0.035 262 / 0.648) 13.9%, oklch(0.155 0.035 262 / 0.55) 16.0%, oklch(0.155 0.035 262 / 0.45) 17.7%, oklch(0.155 0.035 262 / 0.352) 19.7%, oklch(0.155 0.035 262 / 0.259) 21.4%, oklch(0.155 0.035 262 / 0.175) 23.5%, oklch(0.155 0.035 262 / 0.104) 25.5%, oklch(0.155 0.035 262 / 0.049) 27.9%, oklch(0.155 0.035 262 / 0.013) 30.3%, oklch(0.155 0.035 262 / 0) 34.0%), linear-gradient(to bottom, oklch(0.155 0.035 262 / 0.5), oklch(0.155 0.035 262 / 0) 22%); }
-  .hero-copy { flex: none; padding-top: 0; margin-top: -40px; position: relative; gap: 24px; }
+  .hero-copy { flex: none; padding-top: 0; margin-top: -40px; position: relative; z-index: 1; gap: 24px; } /* sits over the photo's navy fade */
   .band-inner { grid-template-columns: 1fr; }
   .band .hero-ctas { flex-direction: row; flex-wrap: wrap; }
   .facility-head h2, .facility-head p { grid-column: 1 / -1; }
